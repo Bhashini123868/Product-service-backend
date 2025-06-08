@@ -18,6 +18,6 @@ public class LowStockProductServiceImpl implements LowStockProductService {
 
     @Override
     public List<LowStockProductDTO> findLowStockProducts(int threshold) {
-        return List.of();
+        return repository.findLowStockProducts(threshold);
     }
 }

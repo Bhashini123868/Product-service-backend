@@ -11,6 +11,7 @@ import lombok.*;
 @Getter
 @Setter
 public class LowStockProductDTO {
+    private Long id;
 
     @NotBlank(message = "Product name is required")
     private String name;
